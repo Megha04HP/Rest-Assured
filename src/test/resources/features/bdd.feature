@@ -16,26 +16,26 @@ Scenario: Validating response using atleast two assertions
 		Then validate response received
 
 Scenario: Foreign Exchange Page failure
-    Given API for foreign exchange one
+                Given API for foreign exchange one
 		When posted with incorrect Information
 		Then validate negative response code received
 
 
 Scenario: Validate response status code for Negative Scenario using Assertion
-    Given API for foreign exchange 
-    When posted with correct Information
-    Then validate response status code received
+      		Given API for foreign exchange 
+    		When posted with correct Information
+    		Then validate response status code received
 
 
  Scenario: Validate response code on passing future date 
-    Given API for foreign exchange 
-    When posted with correct Information
-    Then validate positive response code received
+    		Given API for foreign exchange 
+    		When posted with correct Information
+    		Then validate positive response code received
 
 Scenario: Validate response code for negative scenario on passing future date using Assertion
-    Given API for foreign exchange 
-    When posted with future date Information
-    Then validate response status code received
+    		Given API for foreign exchange 
+    		When posted with future date Information
+    		Then validate response status code received
 
 Scenario: login page using data provider
 		Given API for for login
