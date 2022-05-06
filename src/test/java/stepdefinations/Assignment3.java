@@ -36,9 +36,7 @@ public class Assignment3 {
 					.then().log().all().statusCode(200).extract().response();
 					Assert.assertEquals(200,response.getStatusCode());
 					System.out.println("Status code is "+response.getStatusCode());
-					String header = response.getHeader("Content-type");
-					Assert.assertTrue(header.contains("application/json"));
-					response.prettyPrint();
+					
 			}
 	}
 
