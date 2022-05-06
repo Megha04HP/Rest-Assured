@@ -39,9 +39,7 @@ public class Assignment7 {
 				.then().log().all().statusCode(200).extract().response();
 		Assert.assertEquals(404,response.getStatusCode());
 		System.out.println("Status code is "+ response.getStatusCode());
-		String text = response.getStatusLine();
-		Assert.assertTrue(text.contains("Bad Request"));  //asserting response status 
-		System.out.println(text);
+		
 	}
 
 }
