@@ -38,7 +38,6 @@ public class Assignment5 {
 		.then().log().all().statusCode(404).extract().response();
 		Assert.assertEquals(404,response.getStatusCode());
 		System.out.println("Status code is "+ response.getStatusCode());
-		String text = response.getStatusLine();
-		Assert.assertTrue(text.contains("Bad Request")); 
+		
 		}
 }
